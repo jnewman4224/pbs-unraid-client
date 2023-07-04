@@ -7,11 +7,12 @@ name: Docker
 
 on:
   push:
-    branches: [ "latest" ]
+    branches: [ "main" ]
     # Publish server tags as releases.
     tags: [ 'v*.*.*' ]
   pull_request:
-    branches: [ "latest" ]
+    branches: [ "main" ]
+  workflow_dispatch:
 
 env:
   # Use docker.io for Docker Hub if empty
